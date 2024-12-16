@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --primaryColor: #FF6B82;
+    --greyColor: #C8C8C8;
+    --blackColor: #000000;
+    --textColor: #000000;
+
+    /* Font and Typography */
+
+    --textFontSize: 14px;
+    --smallTextFontSize: 10px;
+    --midfontSize: 12px;
+    --textFontWeight: 600;
+}
+
+.content{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.box{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.info{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.title{
+    margin-bottom: 25px;
+}
+.info h1{
+    text-align: center;
+    position: relative;
+}
+.info h1 span{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--primaryColor);
+    position: relative;
+    z-index: 999;
+    background-color: #fff;
+    padding: 0 20px;
+}
+.box-body{
+    border: 1px solid var(--greyColor);
+    max-height: 100px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.box-body.active{
+    max-height: 245px;
+    background-color: #FFF9FA;
+    border: 2px solid var(--primaryColor);
+}
+.box-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 20px;
+    cursor: pointer;;
+}
+.box .box-body-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.box input[type="radio"]{
+    accent-color: var(--primaryColor);
+}
+.box .radio-label p:nth-child(1){
+    font-size: var(--textFontSize);
+    font-weight: var(--textFontWeight);
+}
+
+.info h1:before{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: var(--greyColor);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.box .discount-badge{
+    background-color: var(--primaryColor);
+    color: #fff;
+    font-weight: 400;
+    padding: 1px 6px;
+    margin-left: 6px;
+    font-size: var(--textFontSize);
+    top: 103px;
+    height: 17px;
+    left: 157px;
+    width: 55px;
+    border-radius: 1px;
+}
+
+.price-type{
+   font-size: var(--midfontSize);
+   top: 121.77px;
+   height: 15px;
+   line-height: 14.52px;
+   width: 84px;
+   font-weight: 400;
+   
+}
+
+.box .discount-badge{
+    font-size: 12px;
+    line-height: 14.52px;
+    left: 162px;
+    top: 104px;
+    height: 15px;
+    width: 44px;
+    text-align: center;
+
+}
+
+.discount-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.5px;
+    width: 82px;
+    height: 18px;
+    top: 104px;
+    left: 293px;
+}
+.strikethrough-text{
+    font-size: var(--smallTextFontSize);
+    text-decoration: line-through;
+    color: #000000;
+    line-height: 12.1px;
+    font-weight: 400;
+    opacity: 30%;
+}
+
+.detail{
+    padding: 0 40px 40px;
+}
+.detail table{
+    border-spacing: 10px;
+}
+
+.detail table select{
+    width: 100%;
+    border: 1px solid var(--greyColor);
+    padding: 5px;
+    outline: none;
+}
+
+.popular-badge{
+    position: absolute;
+    right: 6.5px;
+    top: -12px;
+    background-color: var(--primaryColor);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: var(--textFontSize);
+    font-weight: var(--textFontWeight);
+    padding: 6px 8px;
+    border-radius: 0 0 5px 5px;
+}
+.bottom{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom p{
+    font-size: var(--textFontSize);
+    font-weight: var(--textFontWeight);
+}
+
+.bottom p:nth-child(1){
+    color: var(--primaryColor);
+}
+
+/* submit button style */
+
+.info form input[type="submit"]{
+    background-color: var(--primaryColor);
+    padding: 15px 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+/* watermark style */
+
+.watermark{
+    font-style: italic;
+    font-size: var(--smallTextFontSize);
+    color: #9b9b9b;
+    text-align: right;
+}
